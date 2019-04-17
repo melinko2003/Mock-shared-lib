@@ -2,7 +2,7 @@
 
 def call(options) {
 
-            stage('PreCall') {
+            stage('PreStage') {
                 steps {
                     echo 'PreCall'
                 }
