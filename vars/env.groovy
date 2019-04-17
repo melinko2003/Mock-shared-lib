@@ -8,7 +8,7 @@ def call(options) {
         SALT_MASTER = 'https://certlint-api.salt.int.godaddy.com:8000'
         BUILD_DATE=new Date().format( 'yyyyMMddHHmm' )
         RPM_PATH_BASE= './'
-        APP_NAME= ${options}
+        APP_NAME= "${options}"
 	RPM_NAME="${APP_NAME}-${BUILD_DATE}-1.git.${GIT_COMMIT}.x86_64.rpm"
 	
 }
