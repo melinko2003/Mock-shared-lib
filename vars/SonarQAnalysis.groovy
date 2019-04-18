@@ -1,0 +1,4 @@
+    def call(def gitbranch) {
+        //sh "/opt/sonar-runner-2.4/bin/sonar-runner -Dsonar.projectKey=auth-ms-${gitbranch} -Dsonar.tests=./src/test -Dsonar.sources=./src/main -Dsonar.java.binaries=./target/classes -Dsonar.java.test.binaries=./target/test-classes -Dsonar.junit.reportPaths=./target/surefire-reports"
+    	echo "/opt/sonar-runner-2.4/bin/sonar-runner -Dsonar.projectKey=auth-ms-${gitbranch} -Dsonar.tests=./src/test -Dsonar.sources=./src/main -Dsonar.java.binaries=./target/classes -Dsonar.java.test.binaries=./target/test-classes -Dsonar.junit.reportPaths=./target/surefire-reports"
+    }
